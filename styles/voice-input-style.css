@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kdam+Thmor+Pro&family=Noto+Sans+Sinhala:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    height: 100vh;  
+    width: 100vw;
+}
+nav{
+    height: 5.8%;
+    width: 100%;
+    background-color: #141218;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #000000;
+    /*padding: 12px; change if needed*/
+}
+#nav-icon{
+    margin-left: 5%;
+    cursor: pointer;
+}
+#EM-call{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    cursor: pointer;
+    margin-left: 25%;
+}
+#Em-text{
+    color: #FFA5A5;
+    font-size: 0.8em;
+    font-family: 'Noto Sans Sinhala';
+}
+#call-icon{
+    width: 20%;
+    cursor: pointer;
+    margin-right: -7%;
+}
+main{
+    height: 70%;
+    width: 100%;
+    background-color: #141218;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#logo{
+    position: absolute;
+    top: 15%;
+    width: 40%;
+}
+#text-anime{
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}
+#text1{
+    color: #A3A3A3;
+    size: 1em;
+    font-family: 'Noto Sans Sinhala';
+    margin-bottom: 10%;
+}
+#text2{
+    color: #A07759;
+    font-family: 'Noto Sans Sinhala';
+    size: 1em;
+}
+footer{
+    background-color: #2B2B2B;
+    height: 24.1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12%;
+}
+#speaker{
+    cursor: pointer;
+    margin-top: 8%;
+}
+#footer-text{
+    color: white;
+    font-size: 0.7em;
+    font-family: 'Noto Sans Sinhala';
+    color: #DEDEDE;
+}

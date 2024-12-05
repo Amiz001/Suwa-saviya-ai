@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suwa-saviya</title>
-    <link rel="stylesheet" href="styles/voice-input-style.css">
+    <link rel="stylesheet" href="styles/voice-result-style.css">
     <script src="https://kit.fontawesome.com/1f59e04ed2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -60,19 +60,54 @@
     </aside>
     <div id="shadow"></div>
     <main>
-        <img id="logo" src="images/logo2.png" alt="logo">
-        <div id="text-anime">
-            <p id="text1">උත්සාහ කරන්න :</p><br>
-            <p id="text2">Anime text</p>
+        <img id="spectrum" src="images/spectrum.png" alt="spectrum">
+        <div id="voiceText">“<span class="idwords">ගින්දරට</span> හසුවී <span class="idwords"> පිච්චුනා</span>”</div> 
+        <div id="response">
+            <p id="idText">හදිසි පිළිස්සීම් තත්වයක්</p>
+            <img id="identified" src="images/identified.png" alt="identified">
         </div>
+
+        <div id="button-container">
+           <img id="header" src="images/header.png" alt="header"> 
+           <hr id="button-line">
+           <img id="list1" src="images/List item 1.png" alt="List item">
+           <img onclick="displayBtn()" id="action-btn" src="images/Actions.png" alt="Actions">
+           <img id="result-view" src="images/Search view modal.png">
+        </div>
+
+        <div id="text-container">
+            <p id="main-title">
+                ගිලන් රථය පැමිණෙන තෙක් පහත උපදෙස් පිළිපදින්න
+            </p><br>
+            <p class="sub-title" id="st1">
+                මෙම ප්‍රථමාධාර අනුගමනය කරන්න.
+            </p>
+            <p id="para-list1">
+                1.වහාම ආරක්ෂිත ස්ථානයකට යන්න 
+                2.පිළිස්සුනු ඇදුම් සෙමෙන් ඉවත් කරන්න
+                3.පිළිස්සීම් ප්‍රදේශය ඇල් ජලයෙන් සිසිල් කරන්න 
+                4.පිළිස්සුනු ප්‍රදේශය පිරිසිදු, වියලි කපු රෙදි කැබැල්ලකින් ආවරණය කරන්න
+            </p><br>
+            <p class="sub-title" id="st2">
+                මෙම ක්‍රියාවන්ගෙන් වලකින්න
+            </p>
+            <p id="para-list2">
+                1.ඖෂධ හෝ තෙල් ආලේප කිරීමෙන් වලකින්න
+                2.පිළිස්සුනු ප්‍රදේශය තෙත රෙදි කැබැල්ලකින් ආවරණය නොකරන්න
+            </p><br>
+            <p class="sub-title">
+                ආරක්ෂිතව සිටින්න
+            </p>
+        </div>
+        
     </main>
     <footer>
+        <a href="voice-input.html"><img id="speaker" src="images/Speaker.png" alt="speaker"></a>
         <div id="speaker-anime">
-            <a href="voice-result.html"><img id="speaker" src="images/Speaker.png" alt="speaker"></a>
-            <img id="small-circle" src="images/small circle.png" alt="small circle">
-            <img id="large-circle" src="images/large circle.png" alt="large circle"> 
+            <img id="single-speaker" src="images/single-speaker.png" alt="single-speaker">
+            <img id="circle3" src="images/circle3.png" alt="circle3">
+            <div id="circle4"></div>
         </div>
-        <p id="footer-text">කතා කිරීමට මයික්රෝෆෝනය ඔබාගෙන සිටින්න</p>
     </footer>
 
     <script src="js/index.js"></script>

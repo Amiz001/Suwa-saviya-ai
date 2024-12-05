@@ -43,3 +43,20 @@ function deleteText() {
 }
 
 typeText();
+
+
+
+//voice result page
+
+function displayBtn(){
+    /*document.getElementById("header").style.display = "none";
+    document.getElementById("list1").style.display = "none";
+    document.getElementById("button-line").style.display = "none";
+    document.getElementById("action-btn").style.display = "none";*/
+    document.getElementById("result-view").style.display = "block";
+}
+
+    
+
+
+    

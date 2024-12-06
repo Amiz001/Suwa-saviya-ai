@@ -164,7 +164,7 @@ footer{
 aside{
     position: absolute;
     background-color: #2B2B2B;
-    left: 0;
+    left: -412px;
     top: 10px;
     z-index: 20;
     height: 70vh;
@@ -175,7 +175,6 @@ aside{
     align-items: flex-start;
     padding: 15px;
     padding-bottom: 60px;
-    left: -412px;
 }
 .aside-active{
     animation: slideR 0.4s ease-in-out forwards;
@@ -231,6 +230,12 @@ li{
     margin: 10px 0px;
     cursor: pointer;
 }
+.li-active{
+    background-color: #141218;
+    border: none;
+    border-radius: 26px;
+    padding: 10px;
+}
 .side-icons{
     width: 8%;
 }
@@ -262,6 +267,58 @@ li{
     opacity: 60%;
     background-color: black;
     display: none;
+}
+
+/*-------section-------------*/
+
+section{
+    background-color: #141218;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 30;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.section-active{
+    display: block;
+    animation: slideIn 0.4s ease-in-out;
+}
+@keyframes slideIn {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0;
+    } 
+}
+#section-head{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    border-bottom: 1px solid black;
+    font-size: 1em;
+}
+#back{
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    cursor: pointer;
+    color: white;
+}
+#contactTitle{
+    width: 350px;
+    position: absolute;
+    top: 13%;
+}
+#contactText{
+    width: 350px;
+    position: absolute;
+    top: 23%;
+    margin-left: 16px;
 }
 
 

@@ -1,15 +1,33 @@
-// Automatically switch from Screen 1 to Screen 2 after 3 seconds
-setTimeout(() => {
+const logoText = document.getElementById("logo-text");
+const logo = document.getElementById("logo");
+const slogan1 = document.getElementById("slogan1");
+const slogan2 = document.getElementById("slogan2");
+const popup = document.getElementById("popup");
+const shadow = document.getElementById("shadow");
+
+function delay(){
+    setTimeout(() => {
+      /*
+       logoText.style.width = ""
+       logoText.style.left = ""
+       logoText.style.top = ""
+       logo.style.left = ""*/
+       logoText.style.display = "none";
+       logo.style.display = "none";
+       popup.style.bottom = "-30px";
+       shadow.style.display = "block";
+       slogan1.classList.add("slogan-active");
+       slogan2.classList.add("slogan-active");
+    }, 2000);
+}
+delay();
+/*setTimeout(() => {
     document.getElementById("screen1").classList.add("hidden");
     document.getElementById("screen2").classList.remove("hidden");
 }, 3000);
 
-// JavaScript to handle additional functionality if needed
-document.addEventListener("DOMContentLoaded", () => {
-  const emergencyButton = document.getElementById("emergency-button");
-
+const emergencyButton = document.getElementById("emergency-button");
   emergencyButton.addEventListener("click", () => {
-    alert("1990 ගිලන් රථ සේවාවට ඇමතුමක් ලබා දෙන්න!");
-  });
-});
+    window.location.href = 'alert.html';
+});*/
 

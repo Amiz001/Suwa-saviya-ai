@@ -1,13 +1,26 @@
 //sidebar toggle
 function toggleNav(){
-    document.querySelector("aside").classList.add("aside-active");
+    document.querySelector("aside").classList.toggle("aside-active");
     document.getElementById("shadow").style.display = "block";
 }
 
 document.getElementById("close-icon").onclick = function(){
-    document.querySelector("aside").classList.add("aside-deactive");
+    document.querySelector("aside").classList.remove("aside-active");
     document.getElementById("shadow").style.display = "none";
 }
+
+//sidebar select effect
+const items = document.querySelectorAll("li");
+
+items.forEach(item => {
+
+  item.addEventListener("click", event =>{
+    items.forEach(i => {
+          i.classList.replace('li-active', "");
+      });
+      event.target.classList.toggle("li-active");
+  });
+});
 
 //text animations
 const textElement = document.getElementById("text2");
@@ -72,6 +85,13 @@ function playSpeech(){
   }, audio.duration);
 
   document.getElementById("circle4").classList.remove("circle4-active");
+}
+
+//display contact
+
+function displayContact(){
+  document.getElementById("section").classList.add("section-active");
+  
 }
 
     

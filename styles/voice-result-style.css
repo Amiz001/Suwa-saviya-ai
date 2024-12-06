@@ -501,7 +501,7 @@ section{
 }
 .section-active{
     display: block;
-    animation: slideIn 0.4s ease-in-out;
+    animation: slideR 0.4s ease-in-out;
 }
 @keyframes slideIn {
     from{

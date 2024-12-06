@@ -229,7 +229,7 @@ main{
     top: 70%;
     left: 5%;
     width: 80%;
-    height: 80%;
+    height: 90%;
     font-family: 'Noto Sans Sinhala';
 }
 #main-title{
@@ -273,7 +273,7 @@ main{
 #lastText{
     opacity: 0;
     animation: fadeIn 3.1s ease-in-out forwards;
-    color: white;
+    margin-bottom: 20px;
 }  
 
 /*-------scroll-bar----------*/
@@ -378,7 +378,7 @@ footer{
 aside{
     position: absolute;
     background-color: #2B2B2B;
-    left: 0;
+    left: -412px;
     top: 10px;
     z-index: 20;
     height: 70vh;
@@ -443,6 +443,12 @@ li{
     overflow: hidden;
     margin: 10px 0px;
     cursor: pointer;
+}
+.li-active{
+    background-color: #141218;
+    border: none;
+    border-radius: 26px;
+    padding: 10px;
 }
 .side-icons{
     width: 8%;

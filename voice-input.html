@@ -10,7 +10,7 @@
 <body>
     <div id="container">
     <nav><i id="nav-icon" onclick="toggleNav()" class="fa-solid fa-bars" style="color: #ffffff;"></i>
-    <div id="EM-call">
+    <div id="EM-call" onclick="displayContact()">
         <img id="call-icon" src="images/call-icon.png" alt="call-icon">
         <p id="Em-text">හදිසි සේවා ඇමතුම්</p>
     </div>
@@ -21,7 +21,7 @@
             <i id="close-icon" class="fa-solid fa-xmark" style="color: #ffffff;"></i>
         </div>
         <ul>  
-            <li>
+            <li class="li-active">
                 <img class="side-icons" src="images/solar_health-bold.png" alt="health">
                 <p class="side-texts">චැනල් සේවය</p>
             </li>
@@ -60,6 +60,13 @@
         </ul>
     </aside>
     <div id="shadow"></div>
+    <section>
+        <div id="section-head">
+            <div id="back"><img src="images/back.png" style="margin-right: 10px; width: 16px;;">ආපසු</div>
+        </div>
+        <img id="contactTitle" src="images/contactgg.png" >
+        <img id="contactText" src="images/contact text.png">
+    </section>
     <main>
         <img id="logo" src="images/logo2.png" alt="logo">
         <div id="text-anime">

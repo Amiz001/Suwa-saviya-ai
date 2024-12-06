@@ -1,0 +1,172 @@
+body {
+  display: flex;	
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.device-frame {
+  width: 360px;
+  height: 640px;
+  background-color: #000;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.tagline {
+  font-size: 16px;
+  color: #aaa;
+}
+
+/* Hidden state for inactive screens */
+.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+
+/* Screen 1 Styles */
+#screen1 h1 {
+    color: #00ffc8;
+    font-size: 3rem;
+    margin-bottom: 2px;
+}
+
+#screen1 h6 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+#screen1 p {
+    color: #bbb;
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.header .icon {
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.icon8 {
+  width: 100px;
+  height: 40px;
+  margin-bottom: 50px;
+ 
+}
+
+.content {
+  margin-bottom: 300px;
+  text-align: center;
+}
+
+
+/* Screen 2 Alert Box */
+.alert-box {
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 1490px;
+	height:235px;
+	margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.alert-box h2 {
+    color: #e74c3c;
+    font-size: 1.3rem;
+}
+
+.alert-box a {
+    color: #ddd;
+    font-size: 1.3rem;
+}
+
+.alert-box p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.blink {
+  background-color: rgba(255, 0, 0, 0.397);
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  animation: blink-animation 2s ease-in-out infinite;
+}
+
+.blink:hover {
+  background-color: #ff4d4d;
+}
+
+.alert-box button:hover {
+    background: #c0392b;
+}
+
+.alert-box .sub-text {
+    color: #2ecc71;
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #screen1 h1 {
+        font-size: 2rem;
+    }
+
+    #screen1 p {
+        font-size: 0.9rem;
+    }
+
+    .alert-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .alert-box p {
+        font-size: 0.9rem;
+    }
+
+    .alert-box button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Blink Animation*/ 
+@keyframes blink-animation {
+  from{
+    background-color: rgba(255, 0, 0, 0.397);
+  }
+  to{
+    background-color: rgba(255, 0, 0, 0.112);
+  }
+}
+
+

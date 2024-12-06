@@ -135,6 +135,9 @@ footer{
     z-index: 10;
     width: 60px;
 }
+.large-circle-active{
+    animation: low-sizeup 2s ease-in-out infinite;
+}
 #small-circle{
     position: absolute;
     z-index: 9;
@@ -143,7 +146,6 @@ footer{
 .circle-active{
     animation: sizeup 2s ease-out infinite ;
 }
-
 
 @keyframes sizeup {
     0%{
@@ -154,6 +156,18 @@ footer{
     }
     70%{
         scale: 6.5;
+    }
+}
+
+@keyframes low-sizeup {
+    0%{
+        scale: 1;
+    }
+    40%{
+        scale: 1.3;
+    }
+    70%{
+        scale: 1.3;
     }
 }
 #footer-text{

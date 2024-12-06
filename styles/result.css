@@ -31,20 +31,24 @@ body{
   height: 100%;
   width: 100%;
 }
-#logo-text{
+.logo-text{
   width: 140px;
   position: absolute;
   top: 18%;
+  transition: all 0.5s ease-in-out;
 }
-.logoText-active{
+.logo-text-active{
   width: 100px;
+  position: absolute;
   top: 15%;
   left: 30%;
 }
-#logo{
+.logo{
   width: 196px;
   position: absolute;
   top: 25%;
+  left: 25%;
+  transition: all 0.5s ease-in-out;
 }
 .logo-active{
   width: 49px;
@@ -83,7 +87,7 @@ body{
   z-index: 19;
   height: 100%;
   width: 100%;
-  opacity: 60%;
+  opacity: 70%;
   background-color: black;
   display: none;
 }
@@ -91,7 +95,7 @@ body{
 /*-------popup--------*/
 #popup{
   position: absolute;
-  bottom: -470px;
+  bottom: -570px;
   height: 65%;
   width: 97%;
   border-radius: 40px;

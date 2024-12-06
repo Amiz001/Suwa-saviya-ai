@@ -1,5 +1,5 @@
-const logoText = document.getElementById("logo-text");
-const logo = document.getElementById("logo");
+const logoText = document.querySelector(".logo-text");
+const logo = document.querySelector(".logo");
 const slogan1 = document.getElementById("slogan1");
 const slogan2 = document.getElementById("slogan2");
 const popup = document.getElementById("popup");
@@ -7,13 +7,8 @@ const shadow = document.getElementById("shadow");
 
 function delay(){
     setTimeout(() => {
-      /*
-       logoText.style.width = ""
-       logoText.style.left = ""
-       logoText.style.top = ""
-       logo.style.left = ""*/
-       logoText.style.display = "none";
-       logo.style.display = "none";
+       logoText.classList.add("logo-text-active");
+       logo.classList.add("logo-active");
        popup.style.bottom = "-30px";
        shadow.style.display = "block";
        slogan1.classList.add("slogan-active");
@@ -21,11 +16,6 @@ function delay(){
     }, 2000);
 }
 delay();
-/*setTimeout(() => {
-    document.getElementById("screen1").classList.add("hidden");
-    document.getElementById("screen2").classList.remove("hidden");
-}, 3000);
-*/
 const emergencyButton = document.getElementById("callBtn");
   emergencyButton.addEventListener("click", () => {
     window.location.href = 'completed.html';

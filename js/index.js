@@ -69,6 +69,7 @@ function displayBtn(){
 
 function micAnimate(){
   document.getElementById("small-circle").classList.add("circle-active");
+  document.getElementById("large-circle").classList.remove("large-circle-active");
 
   setTimeout(() => {
     document.getElementById("small-circle").classList.remove("circle-active");
@@ -76,19 +77,7 @@ function micAnimate(){
   }, 8000);
 }
 
-function playSpeech(){
-  const audio = new Audio("audio/baby-mandla-169039.mp3");
-
-  setTimeout(() => {
-    audio.play();
-    document.getElementById("circle4").classList.add("circle4-active");
-  }, audio.duration);
-
-  document.getElementById("circle4").classList.remove("circle4-active");
-}
-
 //display contact
-
 function displayContact(){
   document.querySelector("section").classList.toggle("section-active");
 

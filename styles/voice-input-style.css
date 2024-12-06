@@ -67,29 +67,32 @@ main{
 #logo{
     position: absolute;
     top: 10%;
-    width: 140.57px;
+    width: 200.57px;
     filter: brightness(30%);
     margin-left: 6px;
+    opacity: 50%;
 }
 
 /*---------typing text-----------*/
 #text-anime{
     position: absolute;
-    bottom: 35px;
+    bottom: 65px;
     left: 18px;
     width: 80vw;
 }
 #text1{
     color: #A3A3A3;
-    font-size: 0.8em;
+    font-size: 1em;
     font-family: 'Noto Sans Sinhala';
+    opacity: 50%;
 }
 #text2 {
     color: #A07759;
     font-family: 'Noto Sans Sinhala';
-    font-size: 0.8em;
+    font-size: 1.2em;
     position: absolute;
     animation: blink 0.6s step-end infinite;
+    opacity: 50%;
   }
   
   @keyframes blink {
@@ -157,7 +160,6 @@ footer{
     color: white;
     font-size: 12px;
     font-family: 'Noto Sans Sinhala';
-    color: #DEDEDE;
 }
 
 /*---------------sidebar-----------------*/
@@ -242,19 +244,19 @@ li{
 .side-texts{
     margin-left: 15px;
     font-size: 0.7em;
-    color: #A3A3A3;
+    color: #DBDBDB;
     font-weight: 550;
     margin-top: 5px;
 }
 .side-titles{
     font-size: 0.6em;
-    color: #A3A3A3;
+    color: #DBDBDB;
     font-weight: 550;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .side-lines{
-    color: #a3a3a35f;
+    color: #666666;
     width: 95%;
 }
 #shadow{
@@ -285,7 +287,7 @@ section{
 }
 .section-active{
     display: block;
-    animation: slideIn 0.4s ease-in-out;
+    animation: slideR 0.4s ease-in-out;
 }
 @keyframes slideIn {
     from{
@@ -310,14 +312,15 @@ section{
     color: white;
 }
 #contactTitle{
-    width: 350px;
+    width: 330px;
     position: absolute;
     top: 13%;
+    margin-left: 20px;
 }
 #contactText{
     width: 350px;
     position: absolute;
-    top: 23%;
+    top: 21%;
     margin-left: 16px;
 }
 

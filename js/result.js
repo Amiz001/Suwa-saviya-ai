@@ -25,9 +25,9 @@ delay();
     document.getElementById("screen1").classList.add("hidden");
     document.getElementById("screen2").classList.remove("hidden");
 }, 3000);
-
-const emergencyButton = document.getElementById("emergency-button");
+*/
+const emergencyButton = document.getElementById("callBtn");
   emergencyButton.addEventListener("click", () => {
-    window.location.href = 'alert.html';
-});*/
+    window.location.href = 'completed.html';
+});
 

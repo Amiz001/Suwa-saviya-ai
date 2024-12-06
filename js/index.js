@@ -77,7 +77,7 @@ function micAnimate(){
 }
 
 function playSpeech(){
-  const audio = new Audio("audio/baby-mandala-169039.mp3");
+  const audio = new Audio("audio/baby-mandla-169039.mp3");
 
   setTimeout(() => {
     audio.play();
@@ -90,8 +90,11 @@ function playSpeech(){
 //display contact
 
 function displayContact(){
-  document.getElementById("section").classList.add("section-active");
-  
+  document.querySelector("section").classList.toggle("section-active");
+
+  document.getElementById("back").onclick = function(){
+    document.querySelector("section").classList.remove("section-active");
+  }
 }
 
     

@@ -1,11 +1,11 @@
 //sidebar toggle
 function toggleNav(){
-    document.querySelector("aside").classList.toggle("aside-active");
+    document.querySelector("aside").classList.add("aside-active");
     document.getElementById("shadow").style.display = "block";
 }
 
 document.getElementById("close-icon").onclick = function(){
-    document.querySelector("aside").classList.remove("aside-active");
+    document.querySelector("aside").classList.add("aside-deactive");
     document.getElementById("shadow").style.display = "none";
 }
 
@@ -44,16 +44,34 @@ function deleteText() {
 
 typeText();
 
-
-
 //voice result page
 
 function displayBtn(){
     /*document.getElementById("header").style.display = "none";
     document.getElementById("list1").style.display = "none";
-    document.getElementById("button-line").style.display = "none";
-    document.getElementById("action-btn").style.display = "none";*/
+    document.getElementById("button-line").style.display = "none";*/
+    document.getElementById("action-btn").style.display = "none";
     document.getElementById("result-view").style.display = "block";
+}
+
+function micAnimate(){
+  document.getElementById("small-circle").classList.add("circle-active");
+
+  setTimeout(() => {
+    document.getElementById("small-circle").classList.remove("circle-active");
+    window.location.href = 'voice-result.html';
+  }, 8000);
+}
+
+function playSpeech(){
+  const audio = new Audio("audio/baby-mandala-169039.mp3");
+
+  setTimeout(() => {
+    audio.play();
+    document.getElementById("circle4").classList.add("circle4-active");
+  }, audio.duration);
+
+  document.getElementById("circle4").classList.remove("circle4-active");
 }
 
     

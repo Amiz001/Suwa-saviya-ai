@@ -8,9 +8,10 @@
     <script src="https://kit.fontawesome.com/1f59e04ed2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="container">
     <nav><i id="nav-icon" onclick="toggleNav()" class="fa-solid fa-bars" style="color: #ffffff;"></i>
     <div id="EM-call">
-        <i id="call-icon" class="fa-solid fa-phone" style="color: #ffa5a5;"></i>
+        <img id="call-icon" src="images/call-icon.png" alt="call-icon">
         <p id="Em-text">හදිසි සේවා ඇමතුම්</p>
     </div>
     </nav>
@@ -68,12 +69,13 @@
     </main>
     <footer>
         <div id="speaker-anime">
-            <a href="voice-result.html"><img id="speaker" src="images/Speaker.png" alt="speaker"></a>
+            <img onclick="micAnimate()" id="speaker" src="images/Speaker.png" alt="speaker">
             <img id="small-circle" src="images/small circle.png" alt="small circle">
             <img id="large-circle" src="images/large circle.png" alt="large circle"> 
         </div>
-        <p id="footer-text">කතා කිරීමට මයික්රෝෆෝනය ඔබාගෙන සිටින්න</p>
+        <p id="footer-text">කතා කිරීමට මයික්‍රෝෆෝනය ඔබාගෙන සිටින්න</p>
     </footer>
+    </div>
 
     <script src="js/index.js"></script>
 </body>

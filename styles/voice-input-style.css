@@ -5,14 +5,24 @@
     padding: 0;
 }
 body{
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     height: 100vh;  
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+#container{
+    width: 100%;
+    max-width: 412px;
+    height: 100%;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
 /*-------navigation-----------*/
 nav{
-    height: 5.8%;
+    height: 7vh;
     width: 100%;
     background-color: #141218;
     display: flex;
@@ -22,30 +32,31 @@ nav{
     /*padding: 12px; change if needed*/
 }
 #nav-icon{
-    margin-left: 5%;
+    margin-left: 18px;
     cursor: pointer;
 }
 #EM-call{
     display: flex;
     align-items: center;
-    width: 50%;
+    justify-content: center;
+    width: 194px;
     cursor: pointer;
-    margin-left: 25%;
+    margin-left: 72px;
 }
 #Em-text{
     color: #FFA5A5;
-    font-size: 0.8em;
+    font-size: 15px;
     font-family: 'Noto Sans Sinhala';
 }
 #call-icon{
-    width: 20%;
+    width: 25px;
     cursor: pointer;
-    margin-right: -7%;
+    margin-right: 5px;
 }
 
 /*---------main-----------*/
 main{
-    height: 70%;
+    height: 70vh;
     width: 100%;
     background-color: #141218;
     display: flex;
@@ -55,27 +66,28 @@ main{
 }
 #logo{
     position: absolute;
-    top: 15%;
-    width: 35%;
+    top: 10%;
+    width: 140.57px;
     filter: brightness(30%);
+    margin-left: 6px;
 }
 
 /*---------typing text-----------*/
 #text-anime{
     position: absolute;
-    bottom: 6%;
-    left: 3%;
-    width: 80%;
+    bottom: 35px;
+    left: 18px;
+    width: 80vw;
 }
 #text1{
     color: #A3A3A3;
-    size: 1em;
+    font-size: 0.8em;
     font-family: 'Noto Sans Sinhala';
 }
 #text2 {
     color: #A07759;
     font-family: 'Noto Sans Sinhala';
-    size: 1em;
+    font-size: 0.8em;
     position: absolute;
     animation: blink 0.6s step-end infinite;
   }
@@ -89,41 +101,43 @@ main{
 /*------------footer---------------*/
 footer{
     background-color: #2B2B2B;
-    height: 24.1%;
+    height: 23vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12%;
+    gap: 14px;
 }
 #speaker-anime{
     position: relative;
-    height: 50%;
-    width: 100vw;
+    height: 80px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 15px;
 }
-a #speaker{
+
+#speaker{
     position: absolute;
     z-index: 11;
     left: 50%;
     top: 50%;
     translate: -50% -50%;
     cursor: pointer;
-    width: 13%;
-    
+    width: 36px;
 }
 #large-circle{
     position: absolute;
     z-index: 10;
-    width: 16%;
+    width: 60px;
 }
 #small-circle{
     position: absolute;
     z-index: 9;
-    width: 6%;
+    width: 10px;
+}
+.circle-active{
     animation: sizeup 2s ease-out infinite ;
 }
 
@@ -133,15 +147,15 @@ a #speaker{
         scale: 1;
     }
     40%{
-        scale: 3.5;
+        scale: 6.5;
     }
     70%{
-        scale: 3.5;
+        scale: 6.5;
     }
 }
 #footer-text{
     color: white;
-    font-size: 0.7em;
+    font-size: 12px;
     font-family: 'Noto Sans Sinhala';
     color: #DEDEDE;
 }
@@ -150,47 +164,71 @@ a #speaker{
 aside{
     position: absolute;
     background-color: #2B2B2B;
-    left: -95%;
+    left: 0;
     top: 10px;
     z-index: 20;
-    height: 80%;
-    width: 85%;
+    height: 70vh;
+    width: 280px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 15px;
     padding-bottom: 60px;
+    left: -412px;
 }
 .aside-active{
-    left: 0;
+    animation: slideR 0.4s ease-in-out forwards;
 }
+.aside-deactive{
+    animation: slideL 0.4s ease-in-out forwards;
+}
+
+@keyframes slideR {
+    from{
+        left: -412px;
+    }
+    to{
+        left: 0;
+    }
+}
+
+@keyframes slideL {
+    from{
+        left: 0;
+    }
+    to{
+        left: -412px;
+    }
+}
+
 #side-top{
     display: flex;
     align-items: center;
     position: relative;
+    width: 100%;
     gap: 16px;
-    margin-top: 30px;
+    margin-top: 19px;
 }
 #close-icon{
     position: absolute;
-    right: 10px;
+    right: 0;
     cursor: pointer;
 }
 #side-logo{
-    width: 45%;
-    fill: greenyellow;
+    width: 100px;
+    margin-left: 8px;
 }
 ul{
     position: absolute;
-    top: 14%;
+    top: 10%;
 }
 li{
     display: flex;
-    width: 95%;
+    width: 250px;
     padding: 5px;
     overflow: hidden;
-    margin: 20px 0px;
+    margin: 10px 0px;
     cursor: pointer;
 }
 .side-icons{
@@ -198,28 +236,29 @@ li{
 }
 .side-texts{
     margin-left: 15px;
-    font-size: 1.2em;
+    font-size: 0.7em;
     color: #A3A3A3;
     font-weight: 550;
+    margin-top: 5px;
 }
 .side-titles{
-    font-size: 1em;
+    font-size: 0.6em;
     color: #A3A3A3;
     font-weight: 550;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .side-lines{
     color: #a3a3a35f;
-    width: 100%;
-    margin-left: 5px;
+    width: 95%;
 }
 #shadow{
     position: absolute;
     top: 0;
+    left: 0;
     z-index: 19;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     opacity: 60%;
     background-color: black;
     display: none;

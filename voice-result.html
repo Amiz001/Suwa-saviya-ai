@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/1f59e04ed2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="container">
     <nav><i id="nav-icon" onclick="toggleNav()" class="fa-solid fa-bars" style="color: #ffffff;"></i>
     <div id="EM-call">
         <i id="call-icon" class="fa-solid fa-phone" style="color: #ffa5a5;"></i>
@@ -68,11 +69,18 @@
         </div>
 
         <div id="button-container">
-           <img id="header" src="images/header.png" alt="header"> 
+           <div id="header">
+            <img id="lead-icon" src="images/Leading-icon-button.png" alt="Leading-icon-button">
+            <p id="header-text">ප්‍රාදේශීය ගිනි නිවීම් ඒකකය</p>
+            <img id="located" src="images/locacted.png" alt="locacted">
+           </div>
            <hr id="button-line">
-           <img id="list1" src="images/List item 1.png" alt="List item">
-           <img onclick="displayBtn()" id="action-btn" src="images/Actions.png" alt="Actions">
-           <img id="result-view" src="images/Search view modal.png">
+           <div id="list1">
+                <img src="images/List item 1.png" alt="list01">
+           </div>
+           <button onclick="displayBtn()" id="action-btn">දැනුවත් කරන්න</button>
+           <img id="result-view" src="images/Search view modal~.png">
+            
         </div>
 
         <div id="text-container">
@@ -83,19 +91,19 @@
                 මෙම ප්‍රථමාධාර අනුගමනය කරන්න.
             </p>
             <p id="para-list1">
-                1.වහාම ආරක්ෂිත ස්ථානයකට යන්න 
-                2.පිළිස්සුනු ඇදුම් සෙමෙන් ඉවත් කරන්න
-                3.පිළිස්සීම් ප්‍රදේශය ඇල් ජලයෙන් සිසිල් කරන්න 
-                4.පිළිස්සුනු ප්‍රදේශය පිරිසිදු, වියලි කපු රෙදි කැබැල්ලකින් ආවරණය කරන්න
+                1.වහාම ආරක්ෂිත ස්ථානයකට යන්න<br>
+                2.පිළිස්සුනු ඇදුම් සෙමෙන් ඉවත් කරන්න<br>
+                3.පිළිස්සීම් ප්‍රදේශය ඇල් ජලයෙන් සිසිල් කරන්න<br> 
+                4.පිළිස්සුනු ප්‍රදේශය පිරිසිදු, වියලි කපු රෙදි කැබැල්ලකින් ආවරණය කරන්න<br>
             </p><br>
             <p class="sub-title" id="st2">
                 මෙම ක්‍රියාවන්ගෙන් වලකින්න
             </p>
             <p id="para-list2">
-                1.ඖෂධ හෝ තෙල් ආලේප කිරීමෙන් වලකින්න
-                2.පිළිස්සුනු ප්‍රදේශය තෙත රෙදි කැබැල්ලකින් ආවරණය නොකරන්න
+                1.ඖෂධ හෝ තෙල් ආලේප කිරීමෙන් වලකින්න<br>
+                2.පිළිස්සුනු ප්‍රදේශය තෙත රෙදි කැබැල්ලකින් ආවරණය නොකරන්න<br>
             </p><br>
-            <p class="sub-title">
+            <p class="sub-title" id="lastTest">
                 ආරක්ෂිතව සිටින්න
             </p>
         </div>
@@ -104,12 +112,12 @@
     <footer>
         <a href="voice-input.html"><img id="speaker" src="images/Speaker.png" alt="speaker"></a>
         <div id="speaker-anime">
-            <img id="single-speaker" src="images/single-speaker.png" alt="single-speaker">
+            <img id="single-speaker" onclick="playSpeech()" src="images/single-speaker.png" alt="single-speaker">
             <img id="circle3" src="images/circle3.png" alt="circle3">
             <div id="circle4"></div>
         </div>
     </footer>
-
+    </div>
     <script src="js/index.js"></script>
 </body>
 </html>
